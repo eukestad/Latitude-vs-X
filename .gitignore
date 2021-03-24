@@ -1,5 +1,8 @@
 #User add ons 
 instructions/
+navbar.html
+workspace.code-workspace
+archive/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

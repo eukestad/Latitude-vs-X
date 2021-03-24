@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Latitude - VS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/litera/bootstrap.min.css" integrity="sha384-enpDwFISL6M3ZGZ50Tjo8m65q06uLVnyvkFO3rsoW0UC15ATBFz3QEhr3hmxpYsn" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cyborg/bootstrap.min.css" integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2" crossorigin="anonymous"> -->
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">Comparisons</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="visualizations/maxtemp.html">Max Temperature</a>
+                <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
+                <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="visualizations/windspeed.html">Wind Speed</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        <h3>Comparison: Latitude vs X</h3>
+        <p class="lead">Click any plot to get an in-depth analysis.</p>
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-md">
+                <div class="thumbnail">
+                    <img src="visualizations/Latitude_v_MaxTemp.png" alt="..." class="img-thumbnail">
+                  </div>
+                <div class="caption">
+                    <h5>vs Max Temperature</h5>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="thumbnail">
+                    <img src="visualizations/Latitude_v_Humidity.png" alt="..." class="img-thumbnail">
+                </div> 
+                <div class="caption">
+                    <h5>vs Humidty (%)</h5>
+                </div>                 
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md">
+                <div class="thumbnail">
+                    <img src="visualizations/Latitude_v_Cloudiness.png" alt="..." class="img-thumbnail">
+                </div> 
+                <div class="caption">
+                    <h5>vs Cloudiness (%)</h5>
+                </div>                    
+            </div>
+            <div class="col-md">
+                <div class="thumbnail">
+                    <img src="visualizations/Latitude_v_WindSpeed.png" alt="..." class="img-thumbnail">
+                </div> 
+                <div class="caption">
+                    <h5>vs Wind Speed (mph)</h5>
+                </div>                   
+            </div>
+          </div>
+      </div>
+    </div>
