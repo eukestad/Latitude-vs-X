@@ -26,7 +26,7 @@
   </head>
 <body>
   <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="index.html">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -53,72 +53,80 @@
         </div>
       </nav>
       
+      <!-- Greeting -->
       <div class="jumbotron">
-        <h1 class="display-3">Summary: Latitude vs X</h1>
-        <h4 class="text-muted">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</h4>
-        <hr class="my-4">
-        <p class="lead">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
-        
-        <p class="lead">
-          <a class="btn btn-primary btn-lg" href="data.html" role="button">See the Data</a>
-        </p>
-      </div>
-      <div class="container">
-        <div class="d-flex justify-content-center text-white bg-primary">
-          <h3>Visualizations</h3>
-        </div>
-        <p class="lead">Click on each picture to find out more about the visualization.</p>
+        <div class="row">
+          <div class="col"> 
+            <h1 class="display-3">Summary: Latitude vs X</h1>
+            <div class="clearfix">
+              <img src="visualizations/Latitude_v_MaxTemp.png" alt="..." class="float-left mr-4">
+              <h4 class="text-muted">The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</h4>
+            </div> <!--clearfix-->
+            <hr class="my-4">
+            <p class="lead">After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+            
+            <p class="lead">
+              <a class="btn btn-success btn-lg" href="data.html" role="button">See the Data</a>
+            </p>
+          </div> <!--intro column-->
 
-      <div class="container">
-          <div class="row d-flex justify-content-center">
-              <div class="col-md">
-                <div class="caption d-flex justify-content-center my-4">
-                  <h5>Latitude vs Max Temperature</h5>
+          <div class="col-lg-4">
+            <div class="card border-success">
+              <div class="d-flex justify-content-center text-primary my-2">
+                <h3>Plots</h3>
               </div>
-                <div class="thumbnail d-flex justify-content-center">
-                  <a href="visualizations/maxtemp.html">
-                    <img src="visualizations/Latitude_v_MaxTemp.png" alt="..." class="img-thumbnail">
-                  </a>
+                
+            <div class="container mb-4">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md">
+                      <div class="caption d-flex justify-content-center my-2 text-primary">
+                        <h5>Latitude vs Max Temperature</h5>
+                    </div>
+                      <div class="thumbnail d-flex justify-content-center">
+                        <a href="visualizations/maxtemp.html">
+                          <img src="visualizations/Latitude_v_MaxTemp.png" alt="..." class="img-thumbnail">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                      <div class="caption d-flex justify-content-center my-2 text-primary">
+                        <h5>Latitude vs Humidty (%)</h5>
+                    </div> 
+                      <div class="thumbnail d-flex justify-content-center">
+                        <a href="visualizations/humidity.html">
+                          <img src="visualizations/Latitude_v_Humidity.png" alt="..." class="img-thumbnail">
+                        </a>
+                        </div>              
                   </div>
               </div>
-              <div class="col-md">
-                <div class="caption d-flex justify-content-center my-4">
-                  <h5>Latitude vs Humidty (%)</h5>
-              </div> 
-                <div class="thumbnail d-flex justify-content-center">
-                  <a href="visualizations/humidity.html">
-                    <img src="visualizations/Latitude_v_Humidity.png" alt="..." class="img-thumbnail">
-                  </a>
-                  </div>              
+              <div class="row d-flex justify-content-center">
+                  <div class="col-md">
+                    <div class="caption d-flex justify-content-center my-2 text-primary">
+                      <h5>Latitude vs Cloudiness (%)</h5>
+                  </div>   
+                      <div class="thumbnail d-flex justify-content-center">
+                        <a href="visualizations/cloudiness.html">
+                          <img src="visualizations/Latitude_v_Cloudiness.png" alt="..." class="img-thumbnail">
+                        </a>
+                        </div>                    
+                  </div>
+                  <div class="col-md">
+                    <div class="caption d-flex justify-content-center my-2 text-primary">
+                      <h5>Latitude vs Wind Speed (mph)</h5>
+                  </div> 
+                      <div class="thumbnail d-flex justify-content-center">
+                        <a href="visualizations/windspeed.html">
+                          <img src="visualizations/Latitude_v_WindSpeed.png" alt="..." class="img-thumbnail">
+                        </a>
+                        </div>                   
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
+            
+          </div> <!--column-->
+        </div> <!--jumbotron row-->
 
-    </div>
-        <div class="row d-flex justify-content-center">
-            <div class="col-md">
-              <div class="caption d-flex justify-content-center my-4">
-                <h5>Latitude vs Cloudiness (%)</h5>
-            </div>   
-                <div class="thumbnail d-flex justify-content-center">
-                  <a href="visualizations/cloudiness.html">
-                    <img src="visualizations/Latitude_v_Cloudiness.png" alt="..." class="img-thumbnail">
-                  </a>
-                  </div>                    
-            </div>
-            <div class="col-md">
-              <div class="caption d-flex justify-content-center my-4">
-                <h5>Latitude vs Wind Speed (mph)</h5>
-            </div> 
-                <div class="thumbnail d-flex justify-content-center">
-                  <a href="visualizations/windspeed.html">
-                    <img src="visualizations/Latitude_v_WindSpeed.png" alt="..." class="img-thumbnail">
-                  </a>
-                  </div>                   
-            </div>
-          </div>
-      </div>
+      </div> <!--jumbotron-->
 
-    </div>
-    
-</body>
-</html>
+      

@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Latitude - VS</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/litera/bootstrap.min.css" integrity="sha384-enpDwFISL6M3ZGZ50Tjo8m65q06uLVnyvkFO3rsoW0UC15ATBFz3QEhr3hmxpYsn" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cyborg/bootstrap.min.css" integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2" crossorigin="anonymous"> -->
-</head>
+    <title>Latitude - Home</title>
+
+    <!-- CSS - Used Litera Bootswatch which overrides bootstrap and requires js and jQuery -->
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+
+    <!-- Litera Bootswatch -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/litera/bootstrap.min.css" integrity="sha384-enpDwFISL6M3ZGZ50Tjo8m65q06uLVnyvkFO3rsoW0UC15ATBFz3QEhr3hmxpYsn" crossorigin="anonymous"> -->
+
+    <!-- Flatly Bootswatch -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/flatly/bootstrap.min.css" integrity="sha384-qF/QmIAj5ZaYFAeQcrQ6bfVMAh4zZlrGwTPY7T/M+iTTLJqJBJjwwnsE5Y0mV7QK" crossorigin="anonymous">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+  
+  </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="index.html">Latitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -19,12 +34,6 @@
       
         <div class="collapse navbar-collapse" id="navbarColor03">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="data.html">Data</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="comparison.html">Comparisons</a>
-            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
               <div class="dropdown-menu">
@@ -34,49 +43,90 @@
                 <a class="dropdown-item" href="visualizations/windspeed.html">Wind Speed</a>
               </div>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+            <!-- highlight active page on Nav -->
+            <li class="nav-item active">
+              <a class="nav-link" href="comparison.html">Comparisons</a>
+              <span class="sr-only">(current)</span>
+            </li>
           </ul>
         </div>
       </nav>
 
-      <div class="container">
-        <h3>Comparison: Latitude vs X</h3>
-        <p class="lead">Click any plot to get an in-depth analysis.</p>
-      <div class="container">
-          <div class="row align-items-center">
+      <!-- Visualizations two rows/two columns -->
+      <div class="jumbotron">
+          <h1 class="display-5">Comparison: Latitude vs X</h1>
+          <p class="lead text-muted">Click any plot to get an in-depth analysis.</p>
+          <hr class="my-4">
+          <div class="container">
+            <div class="row d-flex justify-content-center">
+                  <div class="col-md">
+                      <div class="card border-success mb-3">
+                          <div class="card-body">
+                            <div class="caption d-flex justify-content-center my-4 text-success">
+                              <h4 class="card-title">Latitude vs Max Temperature</h4>
+                            </div> <!--caption-->
+                            <div class="thumbnail d-flex justify-content-center">
+                              <a href="visualizations/maxtemp.html">
+                                <img src="visualizations/Latitude_v_MaxTemp.png" alt="..." class="img-thumbnail">
+                              </a>
+                            </div> <!--thumbnail-->
+                          </div> <!--card body-->
+                      </div> <!--card border-->
+                  </div> <!--column-->
+                <div class="col-md">
+                  <div class="card border-success mb-3">
+                      <div class="card-body">
+                        <div class="caption d-flex justify-content-center my-4 text-success">
+                          <h4 class="card-title">Latitude vs Humidty (%)</h4>
+                        </div> <!--caption-->
+                        <div class="thumbnail d-flex justify-content-center">
+                          <a href="visualizations/humidity.html">
+                            <img src="visualizations/Latitude_v_Humidity.png" alt="..." class="img-thumbnail">
+                          </a>
+                        </div> <!--thumbnail-->
+                      </div> <!--card body-->
+                  </div> <!--card border-->
+              </div> <!--column-->
+            </div> <!--row-->
+            <div class="row d-flex justify-content-center">
               <div class="col-md">
-                <div class="thumbnail">
-                    <img src="visualizations/Latitude_v_MaxTemp.png" alt="..." class="img-thumbnail">
-                  </div>
-                <div class="caption text-info">
-                    <h5>vs Max Temperature</h5>
-                </div>
-              </div>
+                <div class="card border-success mb-3">
+                    <div class="card-body">
+                      <div class="caption d-flex justify-content-center my-4 text-success">
+                        <h4 class="card-title">Latitude vs Cloudiness (%)</h4>
+                      </div> <!--caption-->
+                      <div class="thumbnail d-flex justify-content-center">
+                        <a href="visualizations/cloudiness.html">
+                          <img src="visualizations/Latitude_v_Cloudiness.png" alt="..." class="img-thumbnail">
+                        </a>
+                      </div> <!--thumbnail-->
+                    </div> <!--card body-->
+                </div> <!--card border-->
+              </div> <!--column-->
               <div class="col-md">
-                <div class="thumbnail">
-                    <img src="visualizations/Latitude_v_Humidity.png" alt="..." class="img-thumbnail">
-                </div> 
-                <div class="caption">
-                    <h5>vs Humidty (%)</h5>
-                </div>                 
-            </div>
-        </div>
-        <div class="row align-items-center">
-            <div class="col-md">
-                <div class="thumbnail">
-                    <img src="visualizations/Latitude_v_Cloudiness.png" alt="..." class="img-thumbnail">
-                </div> 
-                <div class="caption">
-                    <h5>vs Cloudiness (%)</h5>
-                </div>                    
-            </div>
-            <div class="col-md">
-                <div class="thumbnail">
-                    <img src="visualizations/Latitude_v_WindSpeed.png" alt="..." class="img-thumbnail">
-                </div> 
-                <div class="caption">
-                    <h5>vs Wind Speed (mph)</h5>
-                </div>                   
-            </div>
-          </div>
-      </div>
-    </div>
+                <div class="card border-success mb-3">
+                    <div class="card-body">
+                      <div class="caption d-flex justify-content-center my-4 text-success">
+                        <h4 class="card-title">Latitude vs Wind Speed (mph)</h4>
+                      </div> <!--caption-->
+                      <div class="thumbnail d-flex justify-content-center">
+                        <a href="visualizations/windspeed.html">
+                          <img src="visualizations/Latitude_v_WindSpeed.png" alt="..." class="img-thumbnail">
+                        </a>
+                      </div> <!--thumbnail-->
+                    </div> <!--card body-->
+                </div> <!--card border-->
+              </div> <!--column-->
+            </div> <!--row-->
+          </div> <!--container-->
+      </div> <!--jumbotron-->
+
+      
+
+   
+    
+</body>
+</html>
