@@ -1,5 +1,5 @@
 # Latitude vs X
-This is a web design project that presents WeatherPy analysis results in a web site. 
+This is a web design project that presents [WeatherPy analysis](https://github.com/eukestad/python-api-challenge) results in a web site. 
 
 This repo is published to GitHub Pages accessible at [eukestad.github.io/Web-Design-Challenge/](https://eukestad.github.io/Web-Design-Challenge/index.html)
 
